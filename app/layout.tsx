@@ -1,5 +1,4 @@
 import './globals.css'
-import '../styles/globals.css'
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 
