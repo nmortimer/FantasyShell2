@@ -1,0 +1,129 @@
+{
+  "league": {
+    "id": "12345",
+    "name": "FTFL",
+    "season": 2025
+  },
+  "teams": [
+    {
+      "id": "t1",
+      "name": "Boulder Bandits",
+      "manager": "Nick",
+      "primary": "#00B2CA",
+      "secondary": "#FFFFFF",
+      "stylePack": "v1",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/bandits.svg"
+    },
+    {
+      "id": "t2",
+      "name": "Summit County Ski Bums",
+      "manager": "Jules",
+      "primary": "#1E90FF",
+      "secondary": "#F5F5F5",
+      "stylePack": "v3",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/yeti.svg"
+    },
+    {
+      "id": "t3",
+      "name": "Wakarusa Wizards",
+      "manager": "Dane",
+      "primary": "#9B30FF",
+      "secondary": "#FFFFFF",
+      "stylePack": "v2",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/wizards.svg"
+    },
+    {
+      "id": "t4",
+      "name": "Olde Town Osos",
+      "manager": "Bec",
+      "primary": "#FF3B3B",
+      "secondary": "#F5F5F5",
+      "stylePack": "v1",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/dragons.svg"
+    },
+    {
+      "id": "t5",
+      "name": "Flatiron Foxes",
+      "manager": "Sam",
+      "primary": "#FF7F50",
+      "secondary": "#1E1E1E",
+      "stylePack": "v2",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/bandits.svg"
+    },
+    {
+      "id": "t6",
+      "name": "Golden Geese",
+      "manager": "Lee",
+      "primary": "#FFD700",
+      "secondary": "#2B2B2B",
+      "stylePack": "v3",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/yeti.svg"
+    },
+    {
+      "id": "t7",
+      "name": "Summit Yetis",
+      "manager": "Max",
+      "primary": "#20B2AA",
+      "secondary": "#FFFFFF",
+      "stylePack": "v1",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/wizards.svg"
+    },
+    {
+      "id": "t8",
+      "name": "Green Mountain Ghouls",
+      "manager": "Ivy",
+      "primary": "#2E8B57",
+      "secondary": "#FAFAFA",
+      "stylePack": "v1",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/dragons.svg"
+    },
+    {
+      "id": "t9",
+      "name": "Ridge Runners",
+      "manager": "Ari",
+      "primary": "#1E90FF",
+      "secondary": "#FFFFFF",
+      "stylePack": "v2",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/bandits.svg"
+    },
+    {
+      "id": "t10",
+      "name": "Canyon Coyotes",
+      "manager": "Quin",
+      "primary": "#DC143C",
+      "secondary": "#FFFFFF",
+      "stylePack": "v3",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/yeti.svg"
+    },
+    {
+      "id": "t11",
+      "name": "Mesa Mustangs",
+      "manager": "Kai",
+      "primary": "#8A2BE2",
+      "secondary": "#FFFFFF",
+      "stylePack": "v2",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/wizards.svg"
+    },
+    {
+      "id": "t12",
+      "name": "City Cyclones",
+      "manager": "Zed",
+      "primary": "#3CB371",
+      "secondary": "#FFFFFF",
+      "stylePack": "v1",
+      "status": "draft",
+      "logoUrl": "/placeholders/logos/dragons.svg"
+    }
+  ]
+}

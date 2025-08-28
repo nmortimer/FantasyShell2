@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { height: 100%; background: #1E1E1E; color: #FAFAFA; }
+
+.btn {
+  @apply px-4 py-2 rounded-xl bg-card hover:shadow-glow transition;
+}
+.card {
+  @apply bg-card rounded-2xl p-4 shadow;
+}
