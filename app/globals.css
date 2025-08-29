@@ -1,13 +1,70 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root { color-scheme: dark; }
-html, body { height: 100%; background: #1E1E1E; color: #FAFAFA; }
-
-.btn {
-  @apply px-4 py-2 rounded-xl bg-card hover:shadow-glow transition;
+/* Foil border using CSS variables --accent / --accent2 */
+.foil-frame {
+  position: relative;
+  background:
+    linear-gradient(#111, #111) padding-box,
+    conic-gradient(
+      from 0deg,
+      var(--accent),
+      var(--accent2),
+      #FFD700,
+      #00E0FF,
+      #9B30FF,
+      var(--accent)
+    ) border-box;
+  border-radius: 1.5rem; /* match outer rounded-3xl */
 }
-.card {
-  @apply bg-card rounded-2xl p-4 shadow;
+.foil-accent {
+  /* default behavior uses accent colors already */
 }
+.foil-gold {
+  background:
+    linear-gradient(#111, #111) padding-box,
+    conic-gradient(from 0deg, #f8e08e, #ffd700, #fff2b0, #ffd700, #f8e08e) border-box;
+}
+
+/* Holographic moving overlay */
+.holo-shine::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+      from 0deg,
+      rgba(255, 0, 153, 0.18),
+      rgba(0, 255, 255, 0.18),
+      rgba(255, 255, 0, 0.18),
+      rgba(0, 255, 255, 0.18),
+      rgba(255, 0, 153, 0.18)
+  );
+  filter: saturate(120%) blur(6px);
+  animation: holoShift 6s linear infinite;
+  mix-blend-mode: screen;
+}
+@keyframes holoShift {
+  0%   { transform: rotate(0deg) translate3d(0,0,0); }
+  100% { transform: rotate(360deg) translate3d(0,0,0); }
+}
+
+/* PSA-style badge */
+.psa-badge {
+  background: linear-gradient(180deg, #ffe17a, #ffd700);
+  color: #1a1200;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: .08em;
+  box-shadow: 0 2px 10px rgba(255,215,0,.35), inset 0 0 0 1px rgba(0,0,0,.25);
+}
+
+/* Footer buttons: left/mid/right for nice borders */
+.card-btn-l, .card-btn-m, .card-btn-r {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 10px 12px;
+  background: rgba(0,0,0,0.35);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  transition: background .2s ease, color .2s ease;
+}
+.card-btn-l { border-right: 1px solid rgba(255,255,255,0.06); border-bottom-left-radius: 22px; }
+.card-btn-m { border-right: 1px solid rgba(255,255,255,0.06); }
+.card-btn-r { border-bottom-right-radius: 22px; }
+.card-btn-l:hover, .card-btn-m:hover, .card-btn-r:hover { background: rgba(255,255,255,0.06); }
